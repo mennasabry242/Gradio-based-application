@@ -15,11 +15,9 @@ The app integrates two powerful transformer models:
 
 1. Open this notebook or script in **Google Colab** (T4 GPU recommended).
 2. Install required libraries:
+!pip install gradio transformers torch Pillow 
 
-```bash
-!pip install gradio transformers torch Pillow ```
-
-##🧪 Prompt Engineering Strategy
+## 🧪 Prompt Engineering Strategy
 We used task-specific prompts to improve accuracy and relevance:
 
 **Image Description**
@@ -32,11 +30,11 @@ Edit
 Describe the image.
 This format works well with the LLaVA model and keeps the image context clear.
 
-⚠️** Warning**: Avoid using the Qwen-VL-Chat model for image captioning on Google Colab.
+⚠️ **Warning**: Avoid using the Qwen-VL-Chat model for image captioning on Google Colab.
 It’s very slow, consumes too much GPU, and often times out in limited environments like Colab.
 llava-hf/llava-1.5-7b-hf is much more suitable and optimized.
 
-##👨‍💻 Code Generation
+## 👨‍💻 Code Generation
 We use this consistent format to ensure the model outputs pure Python code only:
 
 text
@@ -70,7 +68,7 @@ max_tokens	Limits the number of tokens in the output (i.e., output length).	100 
 📌 **Note**: Increasing temperature too much often leads to noisy output — especially for code.
 For clean, executable code, keep temperature below 0.75.
 
-##🖼️ User Interface
+## 🖼️ User Interface
 You can select one or both tasks:
 
 Upload an image for description.
