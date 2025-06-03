@@ -55,11 +55,11 @@ The interface provides sliders to experiment with model behavior. Here are recom
 
 **Parameter	Purpose	Recommended Values**
 
-temperature	Controls randomness. Lower values = more focused output.	0.6 – 0.7
+**1-temperature	Controls randomness**. Lower values = more focused output.	0.6 – 0.7
 
-top_p	Nucleus sampling. Filters to top p cumulative probability tokens.	0.8 – 0.95
+**2-top_p	Nucleus sampling**. Filters to top p cumulative probability tokens.	0.8 – 0.95
 
-max_tokens	Limits the number of tokens in the output (i.e., output length).	100 – 200
+**3-max_tokens**	Limits the number of tokens in the output (i.e., output length).	100 – 200
 
 📌 **Note**: Increasing temperature too much often leads to noisy output — especially for code.
 For clean, executable code, keep temperature below 0.75.
