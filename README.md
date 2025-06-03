@@ -22,24 +22,17 @@ We used task-specific prompts to improve accuracy and relevance:
 
 **Image Description**
 Prompt used:
+<image>Describe the image.
 
-text
-Copy
-Edit
-<image>
-Describe the image.
 This format works well with the LLaVA model and keeps the image context clear.
 
 ⚠️ **Warning**: Avoid using the Qwen-VL-Chat model for image captioning on Google Colab.
 It’s very slow, consumes too much GPU, and often times out in limited environments like Colab.
 llava-hf/llava-1.5-7b-hf is much more suitable and optimized.
 
-## 👨‍💻 Code Generation
+**Code Generation**
 We use this consistent format to ensure the model outputs pure Python code only:
 
-text
-Copy
-Edit
 Write only the Python function that solves the following task. 
 Do not add comments, explanations, or markdown.
 
@@ -52,12 +45,12 @@ Keeps the output focused and clean.
 
 Avoids markdown or explanations that interfere with functional code output.
 
-🔍 I tried using more detailed prompt templates to give extra instructions and structure,
+**Note** I tried using more detailed prompt templates to give extra instructions and structure,
 but it confused the model and led to irrelevant or broken outputs.
 What worked best was keeping the prompt balanced — not too vague, not too specific.
 
 ✅ A great tool to explore is FRESCA(Format, Refine, , which helps Write prompts can lead to better results 
-##🎛️ Parameter Tuning Tips
+## 🎛️ Parameter Tuning Tips
 The interface provides sliders to experiment with model behavior. Here are recommended ranges based on testing:
 
 **Parameter	Purpose	Recommended Values**
