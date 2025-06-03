@@ -34,7 +34,7 @@ llava-hf/llava-1.5-7b-hf is much more suitable and optimized.
 **Code Generation**
 
 We use this consistent format to ensure the model outputs pure Python code only:
-
+```bash
 Write only the Python function that solves the following task. 
 Do not add comments, explanations, or markdown.
 
@@ -46,6 +46,7 @@ This minimalistic prompt:
 Keeps the output focused and clean.
 
 Avoids markdown or explanations that interfere with functional code output.
+```
 
 **Note** I tried using more detailed prompt templates to give extra instructions and structure,
 but it confused the model and led to irrelevant or broken outputs.
