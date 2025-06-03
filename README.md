@@ -17,7 +17,8 @@ The app integrates two powerful transformer models:
 2. Install required libraries:
 
 ```bash
-!pip install gradio transformers torch Pillow
+!pip install gradio transformers torch Pillow ```
+
 ##🧪 Prompt Engineering Strategy
 We used task-specific prompts to improve accuracy and relevance:
 
