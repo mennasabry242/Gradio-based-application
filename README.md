@@ -15,7 +15,9 @@ The app integrates two powerful transformer models:
 
 1. Open this notebook or script in **Google Colab** (T4 GPU recommended).
 2. Install required libraries:
-!pip install gradio transformers torch Pillow 
+```bash
+!pip install gradio transformers torch Pillow
+```
 
 ## 🧪 Prompt Engineering Strategy
 We used task-specific prompts to improve accuracy and relevance:
@@ -41,11 +43,6 @@ Do not add comments, explanations, or markdown.
 Task: {your description here}
 
 Code:
-This minimalistic prompt:
-
-Keeps the output focused and clean.
-
-Avoids markdown or explanations that interfere with functional code output.
 ```
 
 **Note** I tried using more detailed prompt templates to give extra instructions and structure,
