@@ -21,6 +21,7 @@ The app integrates two powerful transformer models:
 We used task-specific prompts to improve accuracy and relevance:
 
 **Image Description**
+
 Prompt used:
 <image>Describe the image.
 
@@ -31,6 +32,7 @@ It’s very slow, consumes too much GPU, and often times out in limited environm
 llava-hf/llava-1.5-7b-hf is much more suitable and optimized.
 
 **Code Generation**
+
 We use this consistent format to ensure the model outputs pure Python code only:
 
 Write only the Python function that solves the following task. 
@@ -54,8 +56,11 @@ What worked best was keeping the prompt balanced — not too vague, not too spec
 The interface provides sliders to experiment with model behavior. Here are recommended ranges based on testing:
 
 **Parameter	Purpose	Recommended Values**
+
 temperature	Controls randomness. Lower values = more focused output.	0.6 – 0.7
+
 top_p	Nucleus sampling. Filters to top p cumulative probability tokens.	0.8 – 0.95
+
 max_tokens	Limits the number of tokens in the output (i.e., output length).	100 – 200
 
 📌 **Note**: Increasing temperature too much often leads to noisy output — especially for code.
