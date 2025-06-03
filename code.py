@@ -16,7 +16,7 @@ from transformers import AutoProcessor, LlavaForConditionalGeneration, AutoToken
 
 # ----------- CONFIG -----------
 caption_model_id = "llava-hf/llava-1.5-7b-hf"
-code_model_id = "deepseek-ai/deepseek-coder-1.3b-instruct"
+code_model_id = "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B"
 tokenizer = AutoTokenizer.from_pretrained(code_model_id, trust_remote_code=True)
 
 # ----------- IMAGE DESCRIPTION -----------
